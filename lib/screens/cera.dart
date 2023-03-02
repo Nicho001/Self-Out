@@ -62,6 +62,7 @@ class _ScreenceraState extends State<Screencera> {
 
   Future isfavor() async {
     print(widget.title);
+    
     var url2 = "https://self-out.herokuapp.com/product/${widget.title}";
     final Uri url = Uri.parse(url2);
     String htoken = await sp();
